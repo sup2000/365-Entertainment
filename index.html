@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>365 Entertainment</title>
+</head>
+
+<body>
+  <div class="wholecontainer">
+
+    <header>
+      <nav class="navbar">
+        <div class="navcontainer">
+          <div class="365">
+            <a href="#" class="home"><img class="homelogo" src="images\365.png" alt=""></a>
+          </div>
+          <ul class="navul">
+            <li class="navli"><a href="linkpage.html">Movies</a></li>
+            <li class="navli"><a href="#">Tv Series</a></li>
+            <li class="navli"><a href="#">Audio</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="slideshow">
+
+      <div class="mySlides">
+        <img src="page1/lagaan.PNG">
+      </div>
+
+      <div class="mySlides">
+        <img src="page1/Spcl26.PNG">
+      </div>
+
+      <div class="mySlides">
+        <img src="page1/YJHD.PNG">
+      </div>
+
+      <div class="mySlides">
+        <img src="page1/1920EvilReturns.PNG">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+
+
+
+
+    <section class="section1">
+      <div class="action">
+        <h1>Popular in Action
+        </h1>
+
+        <div class="actionimagespart">
+          <img src="images/lastcity.png" alt="" class="actionimages">
+          <img src="images/tomraider.png" alt="" class="actionimages">
+          <img src="images/japanmarvel.png" alt="" class="actionimages">
+          <img src="images/bohemian.png" alt="" class="actionimages">
+          <img src="images/justice.png" alt="" class="actionimages">
+          <img src="images/borgia.png" alt="" class="actionimages">
+        </div>
+      </div>
+
+      <div class="action">
+        <h1>Popular in Drama
+        </h1>
+        <div class="actionimagespart">
+          <img src="images/lastcity.png" alt="" class="actionimages">
+          <img src="images/tomraider.png" alt="" class="actionimages">
+          <img src="images/japanmarvel.png" alt="" class="actionimages">
+          <img src="images/bohemian.png" alt="" class="actionimages">
+          <img src="images/justice.png" alt="" class="actionimages">
+          <img src="images/borgia.png" alt="" class="actionimages">
+        </div>
+      </div>
+
+      <div class="action">
+        <h1>Popular in Sci-Fi
+        </h1>
+
+        <div class="actionimagespart">
+          <img src="images/lastcity.png" alt="" class="actionimages">
+          <img src="images/tomraider.png" alt="" class="actionimages">
+          <img src="images/japanmarvel.png" alt="" class="actionimages">
+          <img src="images/bohemian.png" alt="" class="actionimages">
+          <img src="images/justice.png" alt="" class="actionimages">
+          <img src="images/borgia.png" alt="" class="actionimages">
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer1">
+      <div class="365">
+        <a href="#" class="home"><img class="footerlogo" src="images\365.png" alt=""></a>
+        <span>Powered by 365 Entertainment Portal 2019. All Rights Reserved.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    a
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+    }
+  </script>
+</body>
+
+</html>

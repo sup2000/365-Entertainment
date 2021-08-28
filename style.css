@@ -1,0 +1,267 @@
+body{
+  background-color: black;
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+header
+{
+  background-image: linear-gradient(to right,#FFFF99,#ADD8E6,#FFFFCC);
+  height:40%;
+  box-sizing: border-box;
+  position: relative;
+  top:-10px;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+.navul
+{
+  display:flex;
+  list-style:  none; 
+  width:100%;
+}
+.navli
+{
+  margin-left:20px; 
+  margin-top: 10px;
+}
+.homelogo
+{
+  width:45px;
+  height:40px;
+  position:relative;
+  left:20px;
+  top:5px;
+  border-radius: 2px;
+  box-shadow:2px 2px 3px grey;
+}
+.navcontainer
+{
+  display:flex;
+  justify-content: space-between;
+}
+h1
+{
+  color:white;
+  font-size: medium
+}
+.action
+{
+  width:90%;
+  position:relative;
+  left:20px;
+  
+}
+.actionimages{
+  margin-left:6px;
+}
+.actionimagespart
+{
+  display:flex;
+  flex-wrap: wrap;
+}
+.actionimagespart img{
+  width:145px;
+}
+.section1{
+  position: relative;
+  top:20px;
+}
+footer{
+  height:20%;
+  background-image: linear-gradient(to right,#FFFF99,#ADD8E6,#FFFFCC);
+  position:relative;
+  top:550px;
+}
+.image1
+{
+  width:900px;
+  border-radius: 5px;
+  height:280px;
+}
+.sliderimage
+{
+  border:1px solid white;
+}
+.footerlogo
+{
+  width:45px;
+  height:40px;
+  position:relative;
+  left:20px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px grey;
+}
+input{
+ border:2px solid darkgoldenrod;
+ background-color: yellow;
+ border-radius: 2px;
+ width:600px;
+ height:20PX; 
+ padding: 0 10px;
+}
+.btn
+{
+ background-color: yellow;
+ border:2px solid darkgoldenrod;
+ float:right;
+ height:20px;
+ width:20px;
+ padding:2px;
+}
+.searchbox
+{
+  float:right;
+  position: relative;
+  right:10px;
+}
+.actionimagespart{
+  border-top: 2px solid grey;
+  margin-top:5px;
+}
+.menudropdwon1
+{ float:left;
+  width:200px;
+}
+.menudropdown1 ul{
+  padding:0px;
+  position: relative;
+  left:35px;
+}
+.menudropdown1 ul li{
+  float:left;
+  color:black;
+  margin:2px;
+  background-color:yellow;
+  font-size: 10px;
+  width:80px;
+  height:20px;
+  line-height:20px;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  right:20px;
+ border: 2px solid darkgoldenrod;
+}
+.menudropdown1 ul li ul{
+  display:none;
+}
+.menudropdown1 ul li ul li{
+  background-color: white;
+  position: relative;
+  right:39px;
+}
+.menudropdown1 ul li ul li:hover{
+  background-color:yellow;
+}
+
+.menudropdown1 ul li:hover> ul
+{
+  display:flex;
+  flex-direction: column; 
+}
+
+section{
+  width:100%;
+  height:50px;
+}
+.actionimagecontainer2
+{
+  position:relative;
+  top:50px;
+  left:15px;
+  width:100%;
+  display:flex;
+  height: max-content;
+  margin:5px;
+  right:20px;
+}
+.actionimagespart2 img{
+  width:110px;
+  margin:5px;
+}
+span{
+  position: relative;
+  left:22px;
+  bottom:18px;
+}
+.footer2
+{ width:100%;
+  position: relative;
+  top:150px;
+}
+
+#slideshow {
+  max-width:1300px;
+  max-height:400px;
+  position: relative;
+  
+}
+#slideshow img{
+  display:flex;
+   height:400px;
+   width:1300px;
+   padding:0px 5px 0px 5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.options
+{
+display:flex;
+flex-wrap: wrap;
+}
+
+h2{
+color:white;
+border-bottom:1.5px solid white;
+padding:10px;
+}
+
+.wholecontainer
+{
+  display:flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.wholecontainer2
+{
+  display:flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.headercontainer
+{
+  display:flex;
+  justify-content: flex-start;
+}

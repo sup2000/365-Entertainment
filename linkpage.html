@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Movies/365 Entertainment</title>
+</head>
+
+<body>
+  <div class="wholecontainer2">
+    <header>
+      <nav class="navbar">
+        <div class="navcontainer">
+          <div class="365">
+            <a href="index.html" class="home"><img class="homelogo" src="images\365.png" alt=""></a>
+          </div>
+          <ul class="navul">
+            <li class="navli"><a href="#">Movies</a></li>
+            <li class="navli"><a href="#">Tv Series</a></li>
+            <li class="navli"><a href="#">Audio</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="slideshow">
+
+      <div class="mySlides">
+        <img src="page2/aquaMan.PNG">
+      </div>
+
+      <div class="mySlides">
+        <img src="page2/coffee.PNG">
+      </div>
+
+      <div class="mySlides">
+        <img src="page2/farm.PNG">
+      </div>
+
+      <div class="mySlides">
+        <img src="page2/TDK.PNG">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <section>
+      <div class="menudropdown1">
+        <ul>
+          <li><a href="#">Genre</a>
+            <i class="fa fa-angle-down"></i>
+            <ul>
+              <li class="genre"><a href="#">All</a></li>
+              <li class="genre"><a href="#">Action</a></li>
+              <li class="genre"><a href="#">Drama</a></li>
+              <li class="genre"><a href="#">Sci-Fi</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="searchbox">
+        <input type="text" name=" " placeholder="Search your favourite movie title" class="search">
+        <div class="btn">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <div class="actionimagecontainer2">
+      <div class="actionimagespart2">
+        <img src="images/lastcity.png" alt="" class="actionimages">
+        <img src="images/tomraider.png" alt="" class="actionimages">
+        <img src="images/japanmarvel.png" alt="" class="actionimages">
+        <img src="images/naruto.png" alt="" class="actionimages">
+        <img src="images/tomraider.png" alt="" class="actionimages">
+        <img src="images/japanmarvel.png" alt="" class="actionimages">
+        <img src="images/bohemian.png" alt="" class="actionimages">
+        <img src="images/justice.png" alt="" class="actionimages">
+        <img src="images/batman.png" alt="" class="actionimages">
+        <img src="images/dream2.png" alt="" class="actionimages">
+        <img src="images/justice.png" alt="" class="actionimages">
+        <img src="images/borgia.png" alt="" class="actionimages">
+        <img src="images/batwoman.png" alt="" class="actionimages">
+        <img src="images/japanmarvel.png" alt="" class="actionimages">
+        <img src="images/batwoman.png" alt="" class="actionimages">
+        <img src="images/batman2.png" alt="" class="actionimages">
+        <img src="images/dream2.png" alt="" class="actionimages">
+        <img src="images/justice.png" alt="" class="actionimages">
+        <img src="images/borgia.png" alt="" class="actionimages">
+        <img src="images/batman2.png" alt="" class="actionimages">
+        <img src="images/japanmarvel.png" alt="" class="actionimages">
+        <img src="images/dream2.png" alt="" class="actionimages">
+        <img src="images/justice.png" alt="" class="actionimages">
+
+      </div>
+    </div>
+
+    <footer class="footer2">
+      <div class="365">
+        <a href="#" class="home"><img class="footerlogo" src="images\365.png" alt=""></a>
+        <span>Powered by 365 Entertainment Portal 2019. All Rights Reserved.</span>
+      </div>
+    </footer>
+  </div>
+
+
+  <script>
+    /*Image Slider*/
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    a
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+      /*Search option*/
+      var input = document.querySelector('.search');
+      var images = document.querySelectorAll('.actionimagespart2 > img');
+
+      input.addEventListener('keydown', function () {
+        for (var i = 0; i < images.length; i++) {
+          if (new RegExp(this.value).test(images[i].src)) {
+            images[i].style.display = 'inline'
+          }
+          else {
+            images[i].style.display = 'none'
+          }
+          console.log(images[i].src)
+        }
+
+      })
+
+    }
+  </script>
+</body>
+
+</html>
