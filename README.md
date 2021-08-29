@@ -11,6 +11,8 @@ Working: The website contains two pages, the front page and the second linked pa
    Page 2: The second page which is the movies section contains the nav and footer bar and the list of movie items listed by the genre.
            There is also a search functionality which works like this for e.g if we search batman then batman would show up ,if naruto then naruto would show up and 
            if batwoman then batwoman will show up. As of now the search functionality works for the three mentioned searches,will try to add more further.
+
+STACK USED: HTML | CSS | JAVASCRIPT
    
 Screenshots:
 
@@ -41,4 +43,6 @@ search result 3:
 search result not found:
 
 ![null](https://user-images.githubusercontent.com/44112481/131224660-754d5f98-126f-46e7-af17-0a946deb6d34.jpg)
+
+** *This is a project for the Suven Internship* **
 
